@@ -2,7 +2,8 @@
     package="com.example.drivekaro">
    <application
         android:label="drivekaro"
-        android:name="${applicationName}"
+
+       android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

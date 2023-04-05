@@ -93,7 +93,7 @@ class _MyOtState extends State<MyOt> {
                       focusedPinTheme: focusedPinTheme,
                       submittedPinTheme: submittedPinTheme,
                       validator: (s) {
-                        return s == '2222' ? null : 'Pin is incorrect';
+                        return s == '2222' ? null : '';
                       },
                       pinputAutovalidateMode: PinputAutovalidateMode.onSubmit,
                       length: 6,
@@ -135,7 +135,7 @@ class _MyOtState extends State<MyOt> {
                                 fontSize: 16.0);
                             print("Wrong Otp");
                           }
-                        },
+                         },
                         child: Text("Verify the code"),
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.amber,
@@ -153,7 +153,7 @@ class _MyOtState extends State<MyOt> {
                             style: TextStyle(color: Colors.black),
                           )),
                     ],
-                  )
+                  ),
                 ],
               ))),
     );

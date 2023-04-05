@@ -1,13 +1,12 @@
 import 'package:drivekaro/pho.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
+import 'insert.dart';
 import 'ot.dart';
 import 'package:drivekaro/ot.dart';
 import 'package:drivekaro/home.dart';
 
 void main() async  {
-
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
@@ -25,6 +24,7 @@ class MyApp extends StatelessWidget {
           'pho':(context)=>MyPho(),
            'ot':(context)=>MyOt(),
            'home':(context)=>Home(),
+           'insert':(context)=>RealtimeDatabaseInsert(),
         }
     );
   }
