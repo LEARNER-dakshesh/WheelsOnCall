@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "408232109490",
-    "project_id": "drivekaro-e0d32",
-    "storage_bucket": "drivekaro-e0d32.appspot.com"
+    "project_number": "462764252208",
+    "project_id": "driverkaro-6413f",
+    "storage_bucket": "driverkaro-6413f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:408232109490:android:7ca48cb5b6f7c39a80f0ab",
+        "mobilesdk_app_id": "1:462764252208:android:10e46d32c983bfbf0ba1f5",
         "android_client_info": {
           "package_name": "com.example.drivekaro"
         }
       },
       "oauth_client": [
         {
-          "client_id": "408232109490-jccag141f1ri7klssqk2rk999l8phl44.apps.googleusercontent.com",
+          "client_id": "462764252208-30b0kq4k49eeengoces79gcrv5kndbjr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.drivekaro",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "408232109490-oh8opbmcl2og8nq0tro27ea2g7bbqtoo.apps.googleusercontent.com",
+          "client_id": "462764252208-csedm8tsm0pp1andhqb8ll1co56h1ioa.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCBrJXkspU-k25LzPL4OcHl2qGje0iyB0A"
+          "current_key": "AIzaSyCbvW40JTRbZ6IALQh8Qk-2mYnu64tcqUY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "408232109490-oh8opbmcl2og8nq0tro27ea2g7bbqtoo.apps.googleusercontent.com",
+              "client_id": "462764252208-csedm8tsm0pp1andhqb8ll1co56h1ioa.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

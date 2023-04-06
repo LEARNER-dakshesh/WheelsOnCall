@@ -11,8 +11,8 @@ class RealtimeDatabaseInsert extends StatelessWidget {
   var adController = new TextEditingController();
   var phnController = new TextEditingController();
 
-  final databaseRef = FirebaseDatabase.instance.ref();
-
+  // final databaseRef = FirebaseDatabase.instance.ref();
+    final firestore=FirebaseFirestore.instance;
   get data => null;
   @override
   Widget build(BuildContext context) {
@@ -87,15 +87,13 @@ class RealtimeDatabaseInsert extends StatelessWidget {
                         dlController.text.isNotEmpty &&
                         adController.text.isNotEmpty &&
                         phnController.text.isNotEmpty) {
-                      //   insertData(
-                      Map<String, String> driverdata = {
-                        "Name": nameController.text,
-                        "Age": ageController.text,
-                        "Driving Licence": dlController.text,
-                        "Aadhar No.": adController.text,
-                        "Phone No.": phnController.text
-                      };
-                      databaseRef.push().set(driverdata);
+                      firestore.collection("Driver Details").add({
+                          "Name": nameController.text,
+                          "Age": ageController.text,
+                          "Driving Licence": dlController.text,
+                          "Address.": adController.text,
+                          "Phone No.": phnController.text
+                      });
                     }
                     },
                   child: Text(

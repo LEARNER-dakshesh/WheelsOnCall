@@ -29,6 +29,9 @@ class Home extends StatelessWidget {
     ];
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: true,
+      //  centerTitle: true,
+        title: Text("DriverKaro",style: TextStyle(color: Colors.black),),
         backgroundColor: Colors.amber,
         elevation: 0,
         actions: [
@@ -36,6 +39,7 @@ class Home extends StatelessWidget {
             icon: Icon(
               Icons.account_circle_outlined,
               size: 32,
+              color: Colors.black,
             ),
             onPressed: () {},
           ),
@@ -47,7 +51,7 @@ class Home extends StatelessWidget {
         ),
         child: CurvedNavigationBar(
           color: Colors.amber,
-          buttonBackgroundColor: Colors.amber,
+          buttonBackgroundColor: Colors.white,
           backgroundColor: Colors.transparent,
           index: index,
           items: items,
@@ -103,11 +107,14 @@ class Home extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, 'insert');
                 },
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.amber,shape: RoundedRectangleBorder(
+                  side: BorderSide(color: Colors.transparent,width: 2),
+                  borderRadius: BorderRadius.circular(5)
+                )),
                 child: Text(
                   ' Add as Driver ',
                   style:
-                      TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                      TextStyle(color: Colors.white, fontWeight: FontWeight.bold, ),
                 ),
               ),
             ),
