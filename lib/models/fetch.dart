@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_cached_image/firebase_cached_image.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class Fetch extends StatefulWidget {
@@ -44,6 +45,14 @@ class _FetchState extends State<Fetch> {
       records.add(driver);
     }
     return records;
+  }
+  void _makePhoneCall(String phoneNumber) async {
+    final phoneUrl = 'tel:$phoneNumber';
+    if (await canLaunch(phoneUrl)) {
+      await launch(phoneUrl);
+    } else {
+      throw 'Could not launch $phoneUrl';
+    }
   }
 
 
@@ -106,10 +115,18 @@ class _FetchState extends State<Fetch> {
                               "Name: ${snapshot.data![index].name}",
                               style: TextStyle(color: Colors.black, fontSize: 18,),
                             ),
-                            Text(
-                              "Phone No.: ${snapshot.data![index].phoneNo}",
-                              style: TextStyle(color: Colors.black ,fontSize: 18,),
+                            GestureDetector(
+                              onTap: () => _makePhoneCall(snapshot.data![index].phoneNo),
+                              child: Text(
+                                "Phone No.: ${snapshot.data![index].phoneNo}",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 18,
+                                  decoration: TextDecoration.underline,
+                                ),
+                              ),
                             ),
+
                             Text(
                               "Address: ${snapshot.data![index].address}",
                               style: TextStyle(color: Colors.black ,fontSize: 18,),

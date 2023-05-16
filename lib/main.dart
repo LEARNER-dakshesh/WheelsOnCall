@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: 'home',
+        initialRoute: 'search_screen',
         routes: {
           'pho': (context) => MyPho(),
           'ot': (context) => MyOt(),
