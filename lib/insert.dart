@@ -35,7 +35,6 @@ class RealtimeDatabaseInsert extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-
                 Text(
                   'Insert Driver Details',
                   style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold,color: Colors.green),

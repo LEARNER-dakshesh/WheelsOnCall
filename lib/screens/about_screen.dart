@@ -50,7 +50,7 @@ class _AboutScreenState extends State<AboutScreen> {
       IconButton(
         icon: Icon(Icons.favorite, size: 30),
         onPressed: () {
-          Navigator.pushNamed(context, 'Home');
+          Navigator.pushNamed(context, 'home');
         },
       ),
       IconButton(
@@ -135,7 +135,7 @@ class _AboutScreenState extends State<AboutScreen> {
             GestureDetector(
               onTap: () => launch('https://www.linkedin.com/in/daksheshgupta/'),
               child: Text(
-                'Managed By Dakshesh : {',
+                'Managed By Dakshesh Gupta',
                 style: TextStyle(
                   fontSize: 18.0,
                   color: Colors.blue,
@@ -147,7 +147,7 @@ class _AboutScreenState extends State<AboutScreen> {
               onTap: () => launch(
                   'https://www.linkedin.com/in/varunesh-pathak-aa7413223/'),
               child: Text(
-                'Fronted Developer  Varunesh Pathak : {',
+                'Fronted Developer Varunesh Pathak ',
                 style: TextStyle(
                   fontSize: 18.0,
                   color: Colors.blue,
@@ -159,7 +159,7 @@ class _AboutScreenState extends State<AboutScreen> {
               onTap: () =>
                   launch('https://www.linkedin.com/in/dev-sharma-a1310922b/'),
               child: Text(
-                'Backend Developer Dev Sharma  : {',
+                'Backend Developer Dev Sharma  ',
                 style: TextStyle(
                   fontSize: 18.0,
                   color: Colors.blue,

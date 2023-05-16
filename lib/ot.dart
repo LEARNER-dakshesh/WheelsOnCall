@@ -135,7 +135,6 @@ class _MyOtState extends State<MyOt> {
                 height: 20,
               ),
               Pinput(
-
                   autofillHints: [AutofillHints.oneTimeCode],
                   defaultPinTheme: defaultPinTheme,
                   focusedPinTheme: focusedPinTheme,

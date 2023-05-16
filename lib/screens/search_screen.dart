@@ -29,7 +29,7 @@ class _SearchScreenState extends State<SearchScreen> {
       IconButton(
         icon: Icon(Icons.home, size: 30),
         onPressed: () {
-          Navigator.pushNamed(context, 'Home');
+          Navigator.pushNamed(context, 'home');
         },
       ),
       IconButton(
@@ -47,7 +47,7 @@ class _SearchScreenState extends State<SearchScreen> {
       IconButton(
         icon: Icon(Icons.mail_outline, size: 30),
         onPressed: () {
-          Navigator.pushNamed(context, 'search_screen');
+          Navigator.pushNamed(context, 'mail_screen');
         },
       ),
       IconButton(

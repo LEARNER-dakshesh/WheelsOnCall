@@ -132,7 +132,8 @@ class _MailScreenState extends State<MailScreen> {
                 Expanded(
                   child: Container(
                     padding: EdgeInsets.symmetric(vertical: 10.0),
-                    child: TextFormField(
+                   child: TextFormField(
+                      controller: _messageController, // Add this line
                       decoration: InputDecoration(
                         hintText: 'Write your message here for any kind of Support',
                         border: OutlineInputBorder(),

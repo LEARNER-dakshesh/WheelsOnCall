@@ -68,6 +68,7 @@ class _FetchState extends State<Fetch> {
           }
 
           return ListView.builder(
+            physics: BouncingScrollPhysics(parent: ClampingScrollPhysics()),
             itemCount: snapshot.data!.length,
             itemBuilder: (context, index) {
               return Padding(
